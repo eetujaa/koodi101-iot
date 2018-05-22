@@ -8,7 +8,7 @@ import time
 
 def readSensors():
     sensors = {
-        "temperature": envirophat.weather.temperature()
+        "temperature": envirophat.motion.accelerometer()
     }
 
     return sensors 
