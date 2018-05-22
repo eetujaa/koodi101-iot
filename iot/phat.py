@@ -7,8 +7,11 @@ import os
 import time
 
 def readSensors():
+    acc = envirophat.motion.accelerometer()
     sensors = {
-        "temperature": envirophat.motion.accelerometer()
+        "x": acc[0],
+        "y": acc[1],
+        "z": acc[2],
     }
 
     return sensors 
